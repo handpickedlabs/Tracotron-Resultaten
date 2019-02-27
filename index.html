@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Tacotron 2: Resultaten</title>
+
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <div class="container-fluid p-0">
+
+      <section class="p-3 p-lg-5 d-flex d-column" id="info">
+        <div class="my-auto">
+          <img src="img/taco.png" alt="taco image"><span class="text-primary">&nbsp;&nbsp;<img src="img/tron.png" alt="tron image">
+          <p class="lead mb-5">Deze pagina bevat de resultaten van <a href="https://google.github.io/tacotron/index.html" target="_blank">Tacotron 2: An end-to-end speech synthesis system by Google</a>
+          implemented by <a href="https://github.com/Rayhane-mamah/" target="_blank">Rayhane Mamah</a></p>
+          
+        <a href="https://labs.handpickedagencies.com/machine-your-voice-with-tacotron-en">
+          Artikel op labs.handpickedagencies.com
+        </a>
+
+        </div>
+      </section>
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="taco-eng">
+        <div class="my-auto">
+          <h2 class="mb-5">Tacotron: Engels</h2>
+          <p>Engelstalig model, getraind met <a href="https://keithito.com/LJ-Speech-Dataset/" target="_blank">LJ-Speech data</a>.</p>
+          <p><b>Omschrijving:</b> LJ-Speech is een dataset met meer dan 23 uur aan gesproken audio van één en dezelfde Engelstaglige mevrouw. Deze dataset wordt door veel implementaties aangeraden om te gebruiken. Om het systeem te leren kennen en de resultaten zelf te kunnen bekijken is er een model getraind met deze dataset.
+            Deze pagina bevat de resulaten.</p>
+          <br><br>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Trainingsresultaten</h3>
+              <p>Hier staan enkele resultaten van het Engelse model. Tijdens het trainen worden "checkpoints" vastgelegd. Hier kun per checkpoint dezelfde zin horen. De checkpoints worden onderscheiden in het aantal stappen van de training die zijn doorlopen.</p>
+            </div>
+          </div>
+          <div class="table-responsive">
+          <table>
+            <thead>
+            <tr>
+              <th>40.000 stappen</th>
+              <th>80.000 stappen</th>
+              <th>120.000 stappen</th>
+              <th>140.000 stappen</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td colspan="7">
+                <div class="text_gst">Text: We are Handpicked agencies, a family of specialised agencies.</div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <audio controls="">
+                  <source src="demos/40k/wav-batch_0_sentence_0-linear.wav" type="audio/wav">
+                </audio>
+              </td>
+
+              <td>
+                <audio controls="">
+                  <source src="demos/80k/wav-batch_0_sentence_0-linear.wav" type="audio/wav">
+                </audio>
+              </td>
+
+
+              <td>
+                <audio controls="">
+                  <source src="demos/120k/wav-batch_0_sentence_0-linear.wav" type="audio/wav">
+                </audio>
+              </td>
+
+
+              <td>
+                <audio controls="">
+                  <source src="demos/140k/wav-batch_0_sentence_0-linear.wav" type="audio/wav">
+                </audio>
+              </td>
+
+            </tr>
+            <tr>
+              <td>
+                <img width="100%" src="demos/40k/linear-batch_0_sentence_0.png"/>
+              </td>
+              <td>
+                <img width="100%" src="demos/80k/linear-batch_0_sentence_0.png"/>
+              </td>
+              <td>
+                <img width="100%" src="demos/120k/linear-batch_0_sentence_0.png"/>
+              </td>
+              <td>
+                <img width="100%" src="demos/140k/linear-batch_0_sentence_0.png"/>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="7">
+                <div class="text_gst">Text: We craft digital connections in sports.</div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <audio controls="">
+                  <source src="demos/40k/wav-batch_1_sentence_0-linear.wav" type="audio/wav">
+                </audio>
+              </td>
+              <td>
+                <audio controls="">
+                  <source src="demos/80k/wav-batch_1_sentence_0-linear.wav" type="audio/wav">
+                </audio>
+              </td>
+              <td>
+                <audio controls="">
+                  <source src="demos/120k/wav-batch_1_sentence_0-linear.wav" type="audio/wav">
+                </audio>
+              </td>
+              <td>
+                <audio controls="">
+                  <source src="demos/140k/wav-batch_1_sentence_0-linear.wav" type="audio/wav">
+                </audio>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img width="100%" src="demos/40k/linear-batch_1_sentence_0.png"/>
+              </td>
+              <td>
+                <img width="100%" src="demos/80k/linear-batch_1_sentence_0.png"/>
+              </td>
+              <td>
+                <img width="100%" src="demos/120k/linear-batch_1_sentence_0.png"/>
+              </td>
+              <td>
+                <img width="100%" src="demos/140k/linear-batch_1_sentence_0.png"/>
+              </td>
+            </tr>
+            </tbody>
+          </table>
+          </div>
+
+          <br><br>
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Nieuwe stem</h3>
+              <p>Het bovenstaande model is getraind met input dat van één persoon. Als experiment is dit model doorgetrained met slechts een 30 minuten aan data van een ander persoon. Het doel van dit experiment is het onderzoeken hoeveel data en training er nodig is om het model een nieuwe stem aan te leren.</p>
+            </div>
+          </div>
+          <div class="table-responsive">
+          <table>
+            <tbody>
+            <tr>
+              <td colspan="7">
+                <div class="text_gst">Text: We are Handpicked agencies, a family of specialised agencies.</div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <audio controls="">
+                  <source src="demos/new_voice/wav-batch_0_sentence_0-linear.wav" type="audio/wav">
+                </audio>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img width="30%" src="demos/new_voice/linear-batch_0_sentence_0.png"/>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="7">
+                <div class="text_gst">Text: We craft digital connections in sports.</div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <audio controls="">
+                  <source src="demos/new_voice/wav-batch_1_sentence_0-linear.wav" type="audio/wav">
+                </audio>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img width="30%" src="demos/new_voice/linear-batch_1_sentence_0.png"/>
+              </td>
+            </tr>
+            </tbody>
+          </table>
+          </div>
+
+      </section>
+
+      <hr class="m-0">
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="taco-ned">
+        <div class="my-auto">
+          <h2 class="mb-5">Tacotron: Nederlands</h2>
+          <p>Nederlandstalig model, getraind met zelfgegenereerde data met luisterboeken van Herman Koch.</p>
+          <p><b>Omschrijving:</b> Omdat er niet genoeg Nederlandse data beschikbaar was van één spreker, is er zelf data gegenereerd met luisterboeken van Herman Koch. Herman Koch heeft de boeken ook zelf ingesproken. Na het opschonen van deze data door te korte of lange zinnen eruit te halen is er ruim acht en een half uur aan gesproken data over om mee te trainen.</p>
+          <br><br>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Trainingsresultaten</h3>
+              <p>Hier staan enkele resultaten van het Nederlandse model. Tijdens het trainen worden "checkpoints" vastgelegd. Hier kun per checkpoint dezelfde zin horen. De checkpoints worden onderscheiden in het aantal stappen van de training die zijn doorlopen.</p>
+            </div>
+          </div>
+          <div class="table-responsive">
+            <table>
+              <thead>
+              <tr>
+                <th>70.000 stappen</th>
+                <th>90.000 stappen</th>
+                <th>110.000 stappen</th>
+                <th>130.000 stappen</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td colspan="7">
+                  <div class="text_gst">Text: Welkom bij de marathon van Rotterdam</div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <audio controls="">
+                    <source src="demos/tacotron_taco_ned_70k/wav-batch_0_sentence_0-linear.wav" type="audio/wav">
+                  </audio>
+                </td>
+
+                <td>
+                  <audio controls="">
+                    <source src="demos/tacotron_taco_ned_90k/wav-batch_0_sentence_0-linear.wav" type="audio/wav">
+                  </audio>
+                </td>
+
+
+                <td>
+                  <audio controls="">
+                    <source src="demos/tacotron_taco_ned_110k/wav-batch_0_sentence_0-linear.wav" type="audio/wav">
+                  </audio>
+                </td>
+
+
+                <td>
+                  <audio controls="">
+                    <source src="demos/tacotron_taco_ned_130k/wav-batch_0_sentence_0-linear.wav" type="audio/wav">
+                  </audio>
+                </td>
+
+              </tr>
+              <tr>
+                <td>
+                  <img width="100%" src="demos/tacotron_taco_ned_70k/linear-batch_0_sentence_0.png"/>
+                </td>
+                <td>
+                  <img width="100%" src="demos/tacotron_taco_ned_90k/linear-batch_0_sentence_0.png"/>
+                </td>
+                <td>
+                  <img width="100%" src="demos/tacotron_taco_ned_110k/linear-batch_0_sentence_0.png"/>
+                </td>
+                <td>
+                  <img width="100%" src="demos/tacotron_taco_ned_130k/linear-batch_0_sentence_0.png"/>
+                </td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+
+      </section>
+
+      <hr class="m-0">
+
+    </div>
+
+  </body>
+
+</html>

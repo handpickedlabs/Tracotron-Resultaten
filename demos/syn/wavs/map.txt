@@ -1,0 +1,2 @@
+tacotron_output/eval/mel-batch_0_sentence_0.npy|wavenet_output/wavs/wavenet-audio-mel-batch_0_sentence_0.wav
+tacotron_output/eval/mel-batch_1_sentence_0.npy|wavenet_output/wavs/wavenet-audio-mel-batch_1_sentence_0.wav
